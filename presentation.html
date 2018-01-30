@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IDM Final</title>
+    <meta name="description" content="A-Frame and WebVR Presentation">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.3.4/dist/aframe-extras.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+      <a-entity 	id="user"
+               		 	camera="userHeight: 1.6"
+                		position="-4 4 0"
+                    rotation="0 0 0"
+                    universal-controls
+               			 >
+      </a-entity>
+<!--       <a-light type="directional" position="0 3 0" color="white"></a-light>
+       <a-entity light="type: point; color: #f4f4f4; intensity: 0.2; distance: 0" position="8 10 18"></a-entity>
+         <a-entity light="type: point; color: #f4f4f4; intensity: 0.6; distance: 0" position="-8 10 -18"></a-entity>
+         <a-entity light="type: ambient; color: #f4f4f4; intensity: 0.4;" position="-8 10 -18"></a-entity> -->
+      <a-entity geometry ="primitive:sphere"
+                position= "-5 2 10"
+                scale= "3 3 3">
+        <a-animation attribute="position"
+                     from= "-5 2 10"
+                     to= "-5 10 12"
+                     dur= "4000"
+                     direction="alternate"
+                     repeat="indefinite">
+        </a-animation>           
+      </a-entity>
+     
+      <a-box scale="19.2 10.8 1" position="10 4 -17" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen1.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -40" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen2.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -57" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen3.png') }}  "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -80" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen4.png') }}  "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -97" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen5.png') }}  "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -120" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen6.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -137" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen7.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -160" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen8.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -177" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen9.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -200" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen10.png') }}  "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -217" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen11.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -240" rotation="0 -140 0" material= "{{ static_url('images/presentation/screen12.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -257" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen13.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -280" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen14.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -297" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen15.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -320" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen16.png') }}  "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -337" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen17.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -360" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen18.png') }} "></a-box>
+      <a-box scale="19.2 10.8 1" position="9 4 -377" rotation="0 140 0" material= "src:{{ static_url('images/presentation/screen19.png') }}  "></a-box>
+      <a-box scale="19.2 10.8 1" position="-20 4 -400" rotation="0 -140 0" material= "src:{{ static_url('images/presentation/screen20.png') }} "></a-box>
+      <a-text value="A-Frame" position="-100 60 -135" rotation="0 0 0" scale="150 150 150" material="color:red"></a-text>
+        <a-animation attribute="material.color"
+                     from="red"
+                     to="blue"
+                     dur="5000"
+                     direction="alternate"></a-animation>
+      <a-text value="A Virtual Presentation" position="30 55 -134" scale="20 20 20"></a-text>
+      <a-text value="by Mike Carbone and Rob Nashed" position="30 50 -134" scale="20 20 20"></a-text>
+      <a-sky src="{{ static_url('images/presentation/gradientCracked.jpg') }} ">
+        <a-animation attribute="rotation"
+                    from="0 0 0"
+                    to="0 360 0"
+                    repeat="indefinite"
+                    direction="alternate"
+                    dur="60000"></a-animation>
+      </a-sky>
+      <a-box scale="2 2 2" color="red" position="8 4 -244">
+          <a-animation attribute="rotation"
+                       from="0 0 0"
+                       to="0 360 0"
+                       repeat="indefinitely"
+                       dur="10000"></a-animation>
+      </a-box>
+     <!-- <a-entity scale=".0001 .00005 .0001" position="-21 0 -275" gltf-model="url(https://cdn.glitch.com/b7738f06-46c1-4f71-be19-6d819022aa32%2Flandscape3.gltf?1497247161387)"></a-entity>-->
+        
+      <a-plane scale="12 12 12" color="#6eef8a" position="-4 3 -2" rotation="-90 0 0"></a-plane>
+      <a-cylinder scale=".5 7 .5" color="#7fd0ff" position="1.5 6 -4"></a-cylinder>
+      <a-cylinder scale=".5 7 .5" color="#7fd0ff" position="1.5 6 0"></a-cylinder>
+      <a-cylinder scale=".5 7 .5" color="#7fd0ff" position="1.5 6 4"></a-cylinder>
+      <a-cylinder scale=".5 7 .5" color="#7fd0ff" position="-10 6 -4"></a-cylinder>
+      <a-cylinder scale=".5 7 .5" color="#7fd0ff" position="-10 6 0"></a-cylinder>
+      <a-cylinder scale=".5 7 .5" color="#7fd0ff" position="-10 6 4"></a-cylinder>
+      
+      <a-sphere scale="1 1 1" color="blue" position="1.5 10 4">
+        <a-animation attribute="position"
+                     to="-10 10 4"
+                     repeat="indefinite"
+                     direction="alternate"></a-animation>
+      </a-sphere>
+      <a-sphere scale="1 1 1" color="blue" position="-10 10 0">
+        <a-animation attribute="position"
+                     to="1.5 10 0"
+                     repeat="indefinite"
+                     direction="alternate"></a-animation>
+      </a-sphere>
+      <a-sphere scale="1 1 1" color="blue" position="1.5 10 -4">
+        <a-animation attribute="position"
+                     to="-10 10 -4"
+                     repeat="indefinite"
+                     direction="alternate"></a-animation>
+      </a-sphere>
+      
+      <a-text value="On mobile: press screen to move" position="-5.5 5 -2"></a-text>
+      <a-text value="On PC: WASD to move" position="-5 4.7 -2"></a-text>
+      
+      <a-box scale="400 .1 .1" rotation="-90 -90 0" position="-4 2.7 -207" material="color:#ff0059; metalness:.6; roughness:.2 "></a-box>
+      
+    </a-scene>
+  </body>
+</html>
