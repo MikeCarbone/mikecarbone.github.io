@@ -316,9 +316,13 @@ li{
 }
 
 #entryLinks{
-	bottom: 0;
-	position: absolute;
-	width: 100%;
+	margin: 170px auto 0 auto;
+	text-align: center;
+	width: 60%;
+}
+
+#entryLinks i{
+	font-size: 1rem;
 }
 /*-----------------------------------About Section----------------------------------*/
 section#about{
