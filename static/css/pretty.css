@@ -721,7 +721,8 @@ i:hover{
 #copy{
 	bottom: 0;
 	color: #4C4C4C;
-	padding: 0px 0 8px 0;
+	height: 200px;
+	padding: 150px 0 8px 0;
 	position: absolute;
 	text-align: center;
 	width: 100%;
