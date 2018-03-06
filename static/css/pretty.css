@@ -576,12 +576,15 @@ section#projects{
 .button{
 	background-color: #E57A22;
 	border-radius: 2px;
-	bottom: 0;
+	bottom: 0px;
 	cursor: pointer;
+	display: inline-block;
 	font-size: 1.5rem;
 	height: 75px;
-	margin: 40px auto 40px 10%;
+	margin: 50px 10% 40px 10%;
+	padding: 20px;
 	position: relative;
+	text-align: center;
 	width: 80%;
 	transition: background-color .25s ease-in-out;
 }
