@@ -314,6 +314,12 @@ ul{
 li{
 	display: inline-block;
 }
+
+#entryLinks{
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
 /*-----------------------------------About Section----------------------------------*/
 section#about{
 	background-color: #0F1927;
