@@ -573,6 +573,24 @@ section#projects{
 	transition: background-color .25s ease-in-out;
 }
 
+.button{
+	background-color: #E57A22;
+	border-radius: 2px;
+	bottom: 0;
+	cursor: pointer;
+	font-size: 1.5rem;
+	height: 75px;
+	margin: 40px auto 40px 10%;
+	position: relative;
+	width: 80%;
+	transition: background-color .25s ease-in-out;
+}
+
+.button:hover{
+	background-color: #904d15;
+	transition: background-color .25s ease-in-out;
+}
+
 .projectCard a{
 	color: #F9F9F9;
 	text-decoration: none;
