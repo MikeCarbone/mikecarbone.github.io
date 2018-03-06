@@ -556,23 +556,6 @@ section#projects{
 	width: 100%;
 }
 
-.projectCard button{
-	background-color: #E57A22;
-	border-radius: 2px;
-	bottom: 0;
-	font-size: 1.5rem;
-	height: 75px;
-	margin: 40px auto 40px 10%;
-	position: relative;
-	width: 80%;
-	transition: background-color .25s ease-in-out;
-}
-
-.projectCard button:hover{
-	background-color: #904d15;
-	transition: background-color .25s ease-in-out;
-}
-
 .button{
 	background-color: #E57A22;
 	border-radius: 2px;
