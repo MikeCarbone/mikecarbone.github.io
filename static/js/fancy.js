@@ -21,7 +21,7 @@ function menuLeave(){
 	burger.classList.add('burgerFlipSide');
 }
 
-//This will run the proper function depending on which state the menu is in
+//This will run the proper function depending on which state the menu is in.
 function menuSwitch(){
 	if (isMenuOpen == false){
 		menuEnter();
