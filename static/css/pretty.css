@@ -661,7 +661,7 @@ section#skills:hover{
 	background-color: #904d15;
 }
 
-#css{
+/*#css{
 	animation: skillFillCss 2s ease-in-out 1s 01 forwards;
 }
 
@@ -670,6 +670,12 @@ section#skills:hover{
 }
 
 #python{
+	animation: skillFillPython 2s ease-in-out 1s 01 forwards;
+}*/
+
+.start{
+	animation: skillFillCss 2s ease-in-out 1s 01 forwards;
+	animation: skillFillJavascript 2s ease-in-out 1s 01 forwards;
 	animation: skillFillPython 2s ease-in-out 1s 01 forwards;
 }
 
