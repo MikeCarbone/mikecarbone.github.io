@@ -81,8 +81,25 @@ function checkAnimation() {
     if ($elem.hasClass('start')) return;
 
     if (isElementInViewport($elem)) {
-        // Start the animation
-        $elem.addClass('start');
+    	if ($elem.id == 'python'){
+    		return;
+    	}
+    	else{
+    		$elem.id = 'python';
+    	}
+
+    	if ($elem.id == 'javascript'){
+    		return;
+    	}
+    	else{
+    		$elem.id = 'javascript';
+    	}
+
+    	if ($elem.id == 'css'){
+    		return;
+    	}else{
+    		$elem.id = 'css';
+    	}
     }
 }
 
