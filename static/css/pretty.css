@@ -747,6 +747,7 @@ i:hover{
 	#burger{
 		font-size: 48px;
 		margin: 0 0 0 1%;
+		width: 10%;
 	}
 
 	#firstName{
