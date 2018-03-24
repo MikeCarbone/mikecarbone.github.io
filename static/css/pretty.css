@@ -502,7 +502,7 @@ section#projects{
 	max-width: 600px;
 	min-width: 400px;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: auto;
 	position: fixed;
 	top: 15%;
 	width: 60%;
@@ -792,4 +792,7 @@ i:hover{
 		width: 100%;
 	}
 
+	.projectCard{
+		left: 5%;
+	}
 }
