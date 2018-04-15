@@ -1,0 +1,179 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background-color: #DAAE3A;
+	font-size: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	width: 100vw;
+	z-index: -10;
+}
+
+.flexWrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	background-color: black;
+	font-family: 'Do Hyeon', sans-serif;
+	color: #DAAE3A;
+	margin: 50px auto;
+	padding: 15px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+h2, h3, h4{
+}
+
+h1{
+	font-size: 8rem;
+	position: relative;
+	z-index: 150;
+}
+
+h2{
+	font-size: 2.5rem;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+
+img{
+	box-shadow: 0px 11px 37px -7px black;
+	max-height: 250px;
+	margin: 70px 70px;
+	object-fit: cover;
+}
+
+.black{
+	background-color: black;
+	height: 275px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(24deg) translateY(1100px);
+	width: 200vw;
+	z-index: -3;
+}
+
+#black2{
+	display: none;
+	transform: rotate(-24deg) translateX(-500px) translateY(2300px);
+}
+
+#black3{
+	height: 150px; 
+	transform: rotate(24deg) translateX(200px) translateY(1600px);
+}
+
+#black4{
+	transform: rotate(-24deg) translateX(-1000px) translateY(1700px);
+}
+
+#black5{
+	display: none;
+	height: 70px;
+	transform: rotate(24deg) translateX(500px) translateY(2200px);
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+	#black2{
+		transform: rotate(-24deg) translateX(-500px) translateY(00px);
+	}
+
+	#black3{
+		height: 150px; 
+		transform: rotate(24deg) translateX(-200px) translateY(600px);
+	}
+
+	#black4{
+		transform: rotate(-24deg) translateX(-700px) translateY(700px);
+	}
+	
+	#black5{
+		height: 70px;
+		transform: rotate(24deg) translateX(100px) translateY(1200px);
+	}
+
+	h1, h2{
+		transform: rotate(12deg) translateX(-50vw) translateY(100px);
+		width: 200vw;
+	}
+
+	h3, h4{
+		position: relative;
+		width: 200vw;
+		z-index: 100;
+	}
+
+	h4{
+		transform: rotate(-12deg) translateX(-50vw) translateY(-90px);
+	}
+
+	h3{
+		transform: rotate(-3deg) translateX(-50vw) translateY(-0px);
+		position: relative;
+		z-index: 140;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	h1, h2, h3, h4{
+		background-color: black;
+		margin: 0 auto;
+		transform: none;
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (min-width: 1280px){
+	h1, h2, h3, h4{
+		background-color: black;
+		display: inline-block;
+		float: left;
+		margin: 0 50% 0 0;
+		padding: 60px 0;
+		transform: none;
+		width: 48%;
+	}
+
+	.flexWrapper{
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+	}
+
+	h1{
+		font-size: 7rem;
+	}
+
+	h4{
+		padding-bottom: 200px;
+		margin-bottom: 0; 
+	}
+
+	img{
+		margin: 40px;
+	}
+
+	#black1, #black4, #black5{
+		display: none;
+	}
+}
