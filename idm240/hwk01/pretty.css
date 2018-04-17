@@ -7,7 +7,6 @@
 html{
 	background-color: #DAAE3A;
 	font-size: 100%;
-	height: 100%;
 	overflow-x: hidden;
 	width: 100vw;
 	z-index: -10;
@@ -171,6 +170,12 @@ img{
 
 	img{
 		margin: 40px;
+	}
+
+	#black3{
+		height: 150px;
+		width: 100vw;
+		transform: rotate(24deg) translateX(690px) translateY(100px);
 	}
 
 	#black1, #black4, #black5{
