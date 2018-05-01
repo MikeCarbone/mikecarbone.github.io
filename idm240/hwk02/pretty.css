@@ -28,6 +28,8 @@ h1{
 
 .svgObj{
 	box-shadow: 1px 11px 34px -17px black;
+	display: flex;
+	justify-content: center;
 	margin: 10px;
 	width: 100%;
 }
