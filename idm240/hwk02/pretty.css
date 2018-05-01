@@ -1,0 +1,73 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html{
+	background-color: #DAAE3A;
+}
+
+h1{
+	background-color: black;
+	color: #DAAE3A;
+    font-family: 'Monoton', cursive;
+    font-size: 4rem;
+    line-height: .65;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.images{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.svgObj{
+	box-shadow: 1px 11px 34px -17px black;
+	margin: 10px;
+	width: 100%;
+}
+
+@media screen and (min-width: 480px){
+	h1{
+		font-size: 6rem;
+	}
+
+	.svgObj{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 600px){
+	h1{
+		font-size: 8rem;
+	}
+
+	.svgObj{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 800px){
+	h1{
+		font-size: 12rem;
+	}
+
+	.svgObj{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1280px){
+	.svgObj{
+		width: 30%;
+	}
+
+	h1{
+		font-size: 15rem;
+	}
+}
