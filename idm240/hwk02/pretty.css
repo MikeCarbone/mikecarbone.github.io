@@ -27,6 +27,7 @@ h1{
 }
 
 .svgObj{
+	border: 5px solid black;
 	box-shadow: 1px 11px 34px -17px black;
 	display: flex;
 	justify-content: center;
