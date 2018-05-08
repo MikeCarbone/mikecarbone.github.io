@@ -1,0 +1,162 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html{
+	background-color: #DAAE3A;
+}
+
+object{
+	cursor: pointer;
+}
+
+svg, img{
+	cursor: pointer;
+}
+
+
+h1{
+	background-color: black;
+	color: #DAAE3A;
+    font-family: 'Monoton', cursive;
+    font-size: 4rem;
+    line-height: .65;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.images{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.svgObj{
+	border: 5px solid black;
+	box-shadow: 1px 11px 34px -17px black;
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	width: 100%;
+}
+
+.post-svg{
+	background-color: transparent;
+	fill: black;
+	stroke: transparent;
+	stroke-width: 0px;
+	overflow: hidden;
+	transition: all 2s ease-in-out 0s;
+	transform: rotate3d(0) scale(1);
+}
+
+.post-svg:hover{
+	background-color: black;
+	fill: #DAAE3A;
+	stroke: red;
+	stroke-width: 1px;
+	transition: all 2s ease-in-out 0s;
+	transform: rotateY(180deg) scale(1.1);
+}
+
+.wire-svg{
+	box-shadow: 0px 0px 5px -40px black;
+	overflow: hidden;
+	transition: all 2s ease-in-out;
+}
+
+.wire-svg:hover{
+	transform: rotateY(180deg) rotateX(45deg) rotate(90deg) scale(1.5);
+	transition: all 2s ease-in-out;
+}
+
+.skull-svg{
+	animation: 3s ease-in-out;
+	overflow: hidden;
+}
+
+.skull-svg:hover{
+	animation: skull 3s ease-in-out forwards;
+}
+
+.snake-svg{
+	overflow: hidden;
+}
+
+.snake-svg:hover{
+	animation: slither 5s ease-in-out forwards;
+	transform: translateY(100px);
+}
+
+@keyframes skull{
+	10%{
+		opacity: 1;
+	}
+	50%{
+
+		transform: scale(1.5);
+		opacity: 0;
+	}
+	75%{
+		background-color: black;
+		fill: #DAAE3A;
+	}
+	100%{
+		background-color: black;
+		fill: #DAAE3A;
+		transform: rotateY(180deg) scale(.75);
+	}
+}
+
+@keyframes slither{
+	10%{transform: rotate(10deg) translateY(90px);}
+	30%{transform: rotate(-10deg) translateY(70px);}
+	50%{transform: rotate(10deg) translateY(50px);}
+	70%{transform: rotate(-10deg) translateY(30px);}
+	90%{transform: rotate(10deg) translateY(10px);}
+	100%{transform: rotate(0deg) translateY(0px);}
+}e
+
+@media screen and (min-width: 480px){
+	h1{
+		font-size: 6rem;
+	}
+
+	.svgObj{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 600px){
+	h1{
+		font-size: 8rem;
+	}
+
+	.svgObj{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 800px){
+	h1{
+		font-size: 12rem;
+	}
+
+	.svgObj{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1280px){
+	.svgObj{
+		width: 30%;
+	}
+
+	h1{
+		font-size: 15rem;
+	}
+}
