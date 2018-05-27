@@ -1,0 +1,147 @@
+*{
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	overflow-x: hidden;
+}
+
+body{
+	background-color: black;
+	min-height: 100vh;
+	transform: scale(1.01);
+}
+
+h1{
+	color: #DAAE3A;
+}
+
+button{
+	cursor: pointer;
+}
+
+.main{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+}
+
+.wire{
+	background-color: #DAAE3A;
+	max-width: 75px;
+	min-height: 100vh;
+	width: 10%;
+}
+
+.graphics-container{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 300px 0 200px 0;
+	width: 80vw;
+}
+
+.volume{
+	background-color: red;
+	cursor: pointer;
+	height: 15px;
+	margin: 50px 0 0 0;
+}
+
+.volume-up{
+	display: none;
+}
+
+.yellow-bar{
+	align-items: center;
+	display: flex;
+	background-color: #DAAE3A;
+	height: 100px;
+	justify-content: center;
+	min-width: 100vw;
+	width: 100%;
+}
+
+.yellow-circle{
+	border-radius: 50%; 
+	background-color: #DAAE3A;
+	height: 450px;
+	width: 450px;
+	z-index: 100;
+}
+
+.post-svg{
+}
+
+.posty{
+	transform: translateY(75px) translateX(25px) translateZ(70px) scale(1.7);
+	width: 100%;
+}
+
+.bottom-zone{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.bottom-zone__name{
+	font-size: 5rem;
+	margin: 0 0 100px 0;
+	transform: translateZ(50px);
+}
+
+.buttons-zone{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.button{
+	background-color: #DAAE3A;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 20px;
+	padding-top: 15%;
+	width: 15%;
+}
+
+.text-zone{
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+
+.text{
+	color: #DAAE3A;
+	font-size: 1.4rem;
+	margin: 20px;
+}
+
+@media screen and (max-width: 550px){
+	.left-wire{
+		display: none;
+	}
+
+	.graphics-container{
+		margin: 250px 0;
+	}
+
+	.yellow-circle{
+		height: 300px;
+		width: 300px;
+	}
+
+	.text-zone{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.posty{
+		transform: translateY(0px) translateX(25px) translateZ(70px) scale(1.2);
+	}
+
+}
