@@ -131,6 +131,7 @@ button{
 
 .vol-svg{
 	height: 5vw;
+	max-height: 40px;
 }
 
 .yellow-bar{
