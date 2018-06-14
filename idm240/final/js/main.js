@@ -1,3 +1,4 @@
+//Controls the volume button
 const volUp = document.getElementById('vol-up-js');
 const volDown = document.getElementById('vol-down-js');
 const backMusic = document.getElementById('audio-js');
