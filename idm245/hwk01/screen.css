@@ -1,0 +1,41 @@
+*{
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 100%;
+}
+
+body{
+	background-color: #FBFBFB;
+	font-family: 'Dosis', sans-serif;
+}
+
+.game{
+	margin: 0px auto;
+	max-width: 800px;
+	padding: 20px;
+}
+
+.header, .link{
+	margin: 10px;
+}
+
+.header{
+	font-size: 2.5rem;
+
+}
+
+.link{
+
+}
+
+.text{
+	font-size: 1.2rem;
+	font-weight: lighter;
+	line-height: 1.5;
+	margin: 20px 10px;
+}
