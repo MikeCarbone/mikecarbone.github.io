@@ -7,11 +7,22 @@
 
 html{
 	font-size: 100%;
+	overflow-x: hidden;
 }
 
 body{
 	background-color: #FBFBFB;
 	font-family: 'Dosis', sans-serif;
+}
+
+a{
+	color: red;
+}
+
+img{
+	display: block;
+	margin: 20px 10px;
+	width: 400px;
 }
 
 .game{
