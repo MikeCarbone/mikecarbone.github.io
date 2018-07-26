@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Infection || Intro</title>
+  <!--Add Phaser Framework library-->
+  <script src="phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+
+
+
+    window.onload = function(){
+        var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', 
+          {
+            preload: preload,
+            create: create
+          });
+
+        function preload(){
+          game.load.image('background', 'assets/background.png');
+
+          game.load.image('city', 'assets/city.png');
+
+          game.load.image('fire', 'assets/fire.png');
+
+          game.load.image('smoke', 'assets/smoke.png');
+
+          game.load.spritesheet('playButton', 'assets/startbutton.png', 192, 0);
+
+          game.load.spritesheet('replayButton', 'assets/replaybutton.png', 67, 0);
+
+          game.load.spritesheet('homeButton', 'assets/homebutton.png', 196, 0);
+        }
+
+        function create(){
+          var spBackground = game.add.sprite(0, 0, 'background');
+
+          
+
+          var city = game.add.sprite(0, 546, 'city');
+          var fire = game.add.sprite(0, 450, 'fire');
+          var smoke = game.add.sprite(0, 450, 'smoke');
+
+          var generalStyle = {
+              width: '150px',
+              font: '34px Arial',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var titleStyle = {
+              width: '150px',
+              font: '94px Cursive',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var detailStyle = {
+              width: '150px',
+              font: '25px Arial',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var winText = game.add.text(game.world.centerX, 100, "You lose!", titleStyle);
+          winText.anchor.setTo(0.5, 0.5);
+
+          var otherText = game.add.text(game.world.centerX, 175, "Everyone died.", generalStyle);
+          otherText.anchor.setTo(0.5, 0.5);
+            
+          let score = 12010;
+          var scoreText = game.add.text(game.world.centerX, 255, `Score: ${score}`, detailStyle);
+          scoreText.anchor.setTo(0.5, 0.5);
+          
+          let time = 55;
+          var timeText = game.add.text(game.world.centerX, 285, `Time remaining: ${time}s`, detailStyle);
+          timeText.anchor.setTo(0.5, 0.5);
+          
+          //the number given are the indexes of the frame in this order: OVER, OUT, DOWN
+
+          var replayButton = game.add.button(game.world.centerX, 370, 'replayButton', actionOnClick, this, 1, 0, 2);
+          replayButton.anchor.setTo(0.5, 0.5);
+
+          var homeButton = game.add.button(game.world.centerX, 450, 'homeButton', actionOnClick, this, 1, 0, 2);
+          homeButton.anchor.setTo(0.5, 0.5);
+
+          function actionOnClick(){
+              console.log('hello');
+          }
+        }
+    }
+
+
+
+  </script>
+</body>
+</html>

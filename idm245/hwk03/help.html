@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Infection || Intro</title>
+  <!--Add Phaser Framework library-->
+  <script src="phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+
+
+
+    window.onload = function(){
+        var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', 
+          {
+            preload: preload,
+            create: create
+          });
+
+        function preload(){
+          game.load.image('background', 'assets/background.png');
+
+          game.load.image('backButton', 'assets/backarrow.png');
+
+          game.load.image('trophy', 'assets/trophy.png');
+
+          game.load.image('checkmark', 'assets/checkmark.png');
+
+          game.load.image('redx', 'assets/redx.png');
+        }
+
+        function create(){
+          var spBackground = game.add.sprite(0, 0, 'background');
+      
+          var generalStyle = {
+              width: '150px',
+              font: '34px Arial',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var titleStyle = {
+              width: '150px',
+              font: '94px Cursive',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var detailStyle = {
+              width: '150px',
+              font: '25px Arial',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var backButton = game.add.button(100, 50, 'backButton', function(){console.log('back');}, this, 1, 0, 2);
+          backButton.anchor.setTo(0.5, 0.5);
+
+          var helpText = game.add.text(game.world.centerX, 100, "Help", titleStyle);
+          helpText.anchor.setTo(0.5, 0.5);
+            
+          var text1 = game.add.text(game.world.centerX, 255, `Score points by clicking and destroying asteroids`, detailStyle);
+          text1.anchor.setTo(0.5, 0.5);
+
+          var text2 = game.add.text(game.world.centerX, 355, `Lose points by letting asteroids hit the city`, detailStyle);
+          text2.anchor.setTo(0.5, 0.5);
+
+          var text2 = game.add.text(game.world.centerX, 455, `Win by defending the city until time runs out`, detailStyle);
+          text2.anchor.setTo(0.5, 0.5);
+
+          var check1 = game.add.sprite(100, 225, 'checkmark');
+
+          var check2 = game.add.sprite(800, 225, 'checkmark');
+
+          var x1 = game.add.sprite(100, 325, 'redx');
+
+          var x2 = game.add.sprite(800, 325, 'redx');
+
+          var trophy1 = game.add.sprite(100, 425, 'trophy');
+
+          var trophy2 = game.add.sprite(800, 425, 'trophy');
+
+          
+        
+        }
+    }
+
+
+
+  </script>
+</body>
+</html>

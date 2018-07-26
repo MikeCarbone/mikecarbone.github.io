@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Infection || Intro</title>
+  <!--Add Phaser Framework library-->
+  <script src="phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+
+
+
+    window.onload = function(){
+        var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', 
+          {
+            preload: preload,
+            create: create
+          });
+
+        function preload(){
+          game.load.image('background', 'assets/background.png');
+
+          game.load.image('city', 'assets/city.png');
+
+          game.load.spritesheet('playButton', 'assets/startbutton.png', 192, 0);
+        }
+
+        function create(){
+          var spBackground = game.add.sprite(0, 0, 'background');
+
+          var city = game.add.sprite(0, 546, 'city');
+
+          var generalStyle = {
+              width: '150px',
+              font: '34px Arial',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var titleStyle = {
+              width: '150px',
+              font: '94px Cursive',
+              fill: 'black',
+              align: 'left',
+          };
+
+          var doodle = game.add.text(game.world.centerX, 100, "Doodle", titleStyle);
+          doodle.anchor.setTo(0.5, 0.5);
+
+          var defender = game.add.text(game.world.centerX, 200, "Defender", titleStyle);
+          defender.anchor.setTo(0.5, 0.5);
+          
+          //the number given are the indexes of the frame in this order: OVER, OUT, DOWN
+          var playButton = game.add.button(game.world.centerX, 400, 'playButton', actionOnClick, this, 1, 0, 2);
+
+          playButton.anchor.setTo(0.5, 0.5);
+
+          function actionOnClick(){
+              console.log('hello');
+          }
+        }
+    }
+
+
+
+  </script>
+</body>
+</html>
