@@ -72,8 +72,8 @@
           var scoreText = game.add.text(game.world.centerX, 255, `Score: ${score}`, detailStyle);
           scoreText.anchor.setTo(0.5, 0.5);
           
-          let time = 0;
-          var timeText = game.add.text(game.world.centerX, 285, `Time remaining: ${time}s`, detailStyle);
+          let time = '0:00';
+          var timeText = game.add.text(game.world.centerX, 285, `Time remaining: ${time}`, detailStyle);
           timeText.anchor.setTo(0.5, 0.5);
           
           //the number given are the indexes of the frame in this order: OVER, OUT, DOWN

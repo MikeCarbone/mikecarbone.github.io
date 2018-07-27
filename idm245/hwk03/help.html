@@ -26,7 +26,7 @@
         function preload(){
           game.load.image('background', 'assets/background.png');
 
-          game.load.image('backButton', 'assets/backarrow.png');
+          game.load.spritesheet('backButton', 'assets/backarrow3.png', 85, 0);
 
           game.load.image('trophy', 'assets/trophy.png');
 
@@ -61,6 +61,8 @@
 
           var backButton = game.add.button(100, 50, 'backButton', function(){console.log('back');}, this, 1, 0, 2);
           backButton.anchor.setTo(0.5, 0.5);
+
+         
 
           var helpText = game.add.text(game.world.centerX, 100, "Help", titleStyle);
           helpText.anchor.setTo(0.5, 0.5);

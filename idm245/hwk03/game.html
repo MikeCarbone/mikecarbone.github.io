@@ -56,6 +56,11 @@
           var scoreText = game.add.text(70, 20, `Score: ${score}`, generalStyle);
           scoreText.anchor.setTo(0.5, 0.5);
 
+          let timer = '1:04';
+          var timerText = game.add.text(game.world.centerX, 40, `${timer}`, generalStyle);
+          timerText.anchor.setTo(0.5, 0.5);
+          timerText.fontSize = '40px';
+
           var healthbar = game.add.sprite(850, 30, 'healthbar');
           healthbar.anchor.setTo(0.5, 0.5);
 
