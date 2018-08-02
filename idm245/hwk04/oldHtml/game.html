@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Infection || Intro</title>
+  <!--Add Phaser Framework library-->
+  <script src="phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+
+
+
+    window.onload = function(){
+        var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', 
+          {
+            preload: preload,
+            create: create
+          });
+
+        function preload(){
+          game.load.image('background', 'assets/background.png');
+
+          game.load.image('city', 'assets/city.png');
+
+          game.load.image('healthbar', 'assets/healthbar.png');
+
+          game.load.image('rock1', 'assets/rock1.png');
+
+          game.load.image('rock2', 'assets/rock2.png');
+
+          game.load.image('rock3', 'assets/rock3.png');
+
+          game.load.image('contact', 'assets/contact.png');
+
+        }
+
+        function create(){
+          var spBackground = game.add.sprite(0, 0, 'background');
+
+          var city = game.add.sprite(0, 546, 'city');
+
+          var generalStyle = {
+              width: '150px',
+              font: '20px Arial',
+              fill: 'black',
+              align: 'left',
+          };
+         
+          let score = 2010;
+          var scoreText = game.add.text(70, 20, `Score: ${score}`, generalStyle);
+          scoreText.anchor.setTo(0.5, 0.5);
+
+          let timer = '1:04';
+          var timerText = game.add.text(game.world.centerX, 40, `${timer}`, generalStyle);
+          timerText.anchor.setTo(0.5, 0.5);
+          timerText.fontSize = '40px';
+
+          var healthbar = game.add.sprite(850, 30, 'healthbar');
+          healthbar.anchor.setTo(0.5, 0.5);
+
+          var rock1 = game.add.sprite(230, 210, 'rock1');
+
+          var rock2 = game.add.sprite(330, 10, 'rock2');
+
+          var rock3 = game.add.sprite(30, 110, 'rock3');
+
+          var rock4 = game.add.sprite(530, 310, 'rock1');
+
+          var rock5 = game.add.sprite(20, 510, 'rock2');
+
+          var rock6 = game.add.sprite(830, 310, 'rock3');
+
+          var rock7 = game.add.sprite(720, 550, 'rock2');
+          rock7.anchor.setTo(.5, .5);
+
+          var contactRock7 = game.add.sprite(720, 550, 'contact');
+          contactRock7.anchor.setTo(.5, .5);
+          contactRock7.scale.setTo(.75, .75);
+
+
+
+
+     
+        }
+    }
+
+
+
+  </script>
+</body>
+</html>
