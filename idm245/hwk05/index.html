@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>IDM245 HWK04</title>
+  <script type="text/javascript">
+
+    window.onload = function(){
+        var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', 
+          {
+            preload: preload,
+            create: create
+          });
+    }
+  </script>
+  <!--Add Phaser Framework library-->
+  <script src="js/phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/phaser.min.js"></script>
+  <script src="js/Boot.js"></script>
+  <script src="js/Preloader.js"></script>
+  <script src="js/Main.js"></script>
+  <script src="js/Play.js"></script>
+  <script src="js/Win.js"></script>
+  <script src="js/Lose.js"></script>
+  <script src="js/Help.js"></script>
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      console.log('windows loaded');
+      //
+      var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas');
+      
+      //Load states/screens
+      game.state.add('Boot', gameObj.Boot);
+      game.state.add('Preloader', gameObj.Preloader);
+      game.state.add('Main', gameObj.Main);
+      game.state.add('Play', gameObj.Play);
+      game.state.add('Win', gameObj.Win);
+      game.state.add('Lose', gameObj.Lose);
+      game.state.add('Help', gameObj.Help);
+
+      //Startup
+      game.state.start('Boot');
+
+
+    }; // windows.onload
+
+  </script>
+  <!--Custom Javascript-->
+  
+</body>
+</html>
