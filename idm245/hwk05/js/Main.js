@@ -35,12 +35,6 @@ gameObj.Main.prototype = {
     //the number given are the indexes of the frame in this order: OVER, OUT, DOWN
     var playButton = this.add.button(this.world.centerX, 400, 'playButton', this.startClick, this, 1, 0, 2);
 
-    var winButton = this.add.button(30, 400, 'playButton', this.winClick, this, 1, 0, 2); 
-    var winText = this.add.text(30, 350, "WIN BUTTON", generalStyle);
-     
-    var loseButton = this.add.button(30, 500, 'playButton', this.loseClick, this, 1, 0, 2);
-    var loseText = this.add.text(30, 450, "LOSE BUTTON", generalStyle);
-
 
     playButton.anchor.setTo(0.5, 0.5);
   },

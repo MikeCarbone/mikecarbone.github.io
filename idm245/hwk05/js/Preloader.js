@@ -43,6 +43,8 @@ gameObj.Preloader.prototype = {
 
     this.load.spritesheet('helpButton', 'assets/helpbutton.png', 196, 0);
 
+    this.load.spritesheet('blankButton', 'assets/blank_button.png', 196, 0);
+
     
   },
   create: function () {

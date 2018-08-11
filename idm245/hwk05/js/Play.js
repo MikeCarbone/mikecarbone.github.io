@@ -10,7 +10,7 @@ gameObj.Play.prototype = {
   create: function () {
     
     gameObj.gScore = 0;
-    gameObj.gTime = "01:20"
+    gameObj.gTime = "01:20";
 
     var spBackground = this.add.sprite(0, 0, 'background');
 
@@ -23,8 +23,14 @@ gameObj.Play.prototype = {
         align: 'left',
     };
 
-    var pointButton = this.add.button(30, 400, 'playButton', this.pointsClicked, this, 1, 0, 2); 
-    var pointText = this.add.text(30, 350, "POINT BUTTON", generalStyle);
+    var pointButton = this.add.button(30, 400, 'blankButton', this.pointsClicked, this, 1, 0, 2); 
+    var pointText = this.add.text(35, 425, "POINT BUTTON", generalStyle);
+
+    var winButton = this.add.button(30, 500, 'blankButton', this.winnerFun, this, 1, 0, 2); 
+    var winText = this.add.text(35, 525, "WIN BUTTON", generalStyle);
+     
+    var loseButton = this.add.button(30, 600, 'blankButton', this.loserFun, this, 1, 0, 2);
+    var loseText = this.add.text(35, 625, "LOSE BUTTON", generalStyle);
    
     //let score = 2010;
     scoreText = this.add.text(70, 20, `Score: ${gameObj.gScore}`, generalStyle);
