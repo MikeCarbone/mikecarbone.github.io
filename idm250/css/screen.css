@@ -933,7 +933,7 @@ input:focus{
 }
 
 .fouroh{
-	margin: 50px auto;
+	margin: 50px auto 20px;
 	width: 100%;
 }
 
@@ -959,7 +959,7 @@ input:focus{
 
 .fouroh__mean{
 	font-size: 1rem;
-	margin: 50px auto;
+	margin: 15px auto;
 	text-align: center;
 }
 
