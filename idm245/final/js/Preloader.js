@@ -13,11 +13,11 @@ gameObj.Preloader.prototype = {
 
     this.load.image('healthgreen', 'assets/healthgreen.png');
 
-    this.load.image('rock1Burst', 'assets/rock1_burst.png');
+    this.load.image('rock1Burst', 'assets/rock1-burst.png');
 
-    this.load.image('rock2Burst', 'assets/rock2_burst.png');
+    this.load.image('rock2Burst', 'assets/rock2-burst.png');
 
-    this.load.image('rock3Burst', 'assets/rock3_burst.png');
+    this.load.image('rock3Burst', 'assets/rock3-burst.png');
 
     this.load.image('contact', 'assets/contact.png');
 
@@ -47,13 +47,13 @@ gameObj.Preloader.prototype = {
 
     this.load.spritesheet('helpButton', 'assets/helpbutton.png', 196, 0);
 
-    this.load.spritesheet('blankButton', 'assets/blank_button.png', 196, 0);
+    this.load.spritesheet('blankButton', 'assets/blank-button.png', 196, 0);
 
-    this.load.spritesheet('rock1', 'assets/rock1_button.png', 109, 0, 2);
+    this.load.spritesheet('rock1', 'assets/rock1-button.png', 109, 0, 2);
 
-    this.load.spritesheet('rock2', 'assets/rock2_button.png', 54, 0, 2);
+    this.load.spritesheet('rock2', 'assets/rock2-button.png', 54, 0, 2);
     
-    this.load.spritesheet('rock3', 'assets/rock3_button.png', 48, 0, 2);
+    this.load.spritesheet('rock3', 'assets/rock3-button.png', 48, 0, 2);
 
     this.load.audio('music', 'assets/stardust.mp3');
 
