@@ -19,8 +19,6 @@ gameObj.Preloader.prototype = {
 
     this.load.image('rock3Burst', 'assets/rock3-burst.png');
 
-    this.load.image('contact', 'assets/contact.png');
-
     this.load.image('background', 'assets/background.png');
 
     this.load.spritesheet('backButton', 'assets/backarrow3.png', 85, 0);
