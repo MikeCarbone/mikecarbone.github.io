@@ -38,11 +38,11 @@ artists = [
 ];
 
 showDivs(slideIndex);
-//console.log(slideIndex);
 
 function plusDivs(n) {
     console.log('plus divs added');
     showDivs(slideIndex += n);
+    updateCanvas();
 }
 
 function showDivs(n) {
@@ -211,10 +211,11 @@ function colorPick(e, colorWheelCanvas){
 
 //Updates the canvas when a color is changed
 function updateCanvas(){
+    let i = slideIndex-1;
     createImg();
 
     function createImg(){
-        var svg = document.getElementsByClassName("colorSvg")[0].children[0];
+        var svg = document.getElementsByClassName("colorSvg")[0].children[i];
         var wrap = document.createElement("div");
         var img = new Image();
         var data;
@@ -241,7 +242,7 @@ function updateCanvas(){
         c.setAttribute('height', rect.height);
 
         ctx.drawImage(img, 0, 0, rect.width, rect.height);
-       
+        
         return setLink(c);
     }
 
