@@ -7,21 +7,21 @@ gameObj.Help.prototype = {
       
     var generalStyle = {
         width: '150px',
-        font: '34px Arial',
+        font: '34px Permanent Marker',
         fill: 'black',
         align: 'left',
     };
 
     var titleStyle = {
         width: '150px',
-        font: '94px Cursive',
+        font: '94px Permanent Marker',
         fill: 'black',
         align: 'left',
     };
 
     var detailStyle = {
         width: '150px',
-        font: '25px Arial',
+        font: '25px Permanent Marker',
         fill: 'black',
         align: 'left',
     };
