@@ -1,0 +1,43 @@
+body {
+	background-color:orange;
+}
+
+.l-wrapper{
+	margin: 0 auto;
+}
+
+.c-face{
+	background: url(https://i.ytimg.com/vi/4N_-hGr-8O4/maxresdefault.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100px;
+	width: 100px;
+	margin: 90px auto 10px;
+}
+
+.c-output{
+	text-align: center;
+}
+
+.c-output::after{
+	content: "this assignment";
+}
+
+@media only screen and (orientation: landscape){
+	body{
+		background-color: blue;
+	}
+
+	.c-face{
+		background: url(https://lh3.googleusercontent.com/-KBeQg5M2aI0/AAAAAAAAAAI/AAAAAAAAADM/vcUmAEDT33o/s640-il/photo.jpg);
+		height: 70vh;
+		background-size: cover;
+		background-position: center;
+		width: 90vw;
+		margin: 90px auto 10px;
+	}
+
+	.c-output::after{
+		content: "sucks";
+	}
+}
