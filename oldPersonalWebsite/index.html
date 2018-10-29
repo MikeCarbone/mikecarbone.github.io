@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mike Carbone</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/pretty.css">
+
+	<!--Model Scripts-->
+	<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+	<script src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/v0.1.14/dist/aframe-orbit-controls-component.min.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
+
+	<!--Fonts & Icons-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="text/css" href="/static/images/mcIcon-01.png">
+</head>
+<body>
+
+	<div id="burgerMenu">
+		<button id="burger" onclick="menuSwitch()">&#9776;</button>
+		<ul id="sideNav">
+			<li><a href="#main">top</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#projects">projects</a></li>
+			<li><a href="#skills">skills</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+	</div>
+
+	<section id="main">
+		<div class="box color1">
+			<div id="dancer">
+				 <a-scene class="scene" embedded inspector keyboard-shortcuts screenshot vr-mode-ui="enabled: false;">
+
+	       			<a-entity id="camera" camera position="0 0 5" rotation="0 0 0" orbit-controls="
+	          				target: #target;
+	            			enableDamping: true;
+	            			enableZoom: false;
+	            			dampingFactor: 0.125;
+	            			rotateSpeed:0.25;
+	            			rotateToSpeed: 0.04;
+	            			rotateTo: 0.172 0.3 2.797;
+	            			logPosition: false;">
+	        		</a-entity>
+
+	        		<a-entity id="target">
+	          			<a-gltf-model position="0 -3 1" scale="3 3 3" rotation="0 0 0" id="mike" src="/static/mike_dancing/scene.gltf" animation-mixer shadow="receive: true"></a-gltf-model>
+	          			<a-light type="ambient" color="#fff" ></a-light>
+					</a-entity>
+	        		<a-sky color="#6496e5"></a-sky>
+	        		
+	        		<a-light></a-light>
+	       		</a-scene>
+			</div>
+		</div>
+		<div class="box color2">
+			<h1 id="firstName">mike</h1>
+			<h1 id="lastName">carbone</h1>
+			<div id="entryLinks">
+				<a href="https://github.com/carbonology" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/themcarbone" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+				<a href="mailto:mfcbone@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/mike-carbone-98a950129/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<h1 class="sectionTitle">about</h1>
+		<div id="textStuff">
+			<h1 class="smallTitle">About me</h1>
+			<h2>My name is Mike Carbone, an Interactive Digital Media sophomore at Drexel University. Using Javascript, CSS, and Python, I really like creating simple, efficient, and user-friendly applications that serve a direct purpose. My areas of interest include augmented reality, virtual reality, and immersive media. I'm also a pretty cool dude that likes Rocket League and PUBG.</h2>
+
+			<h1 class="smallTitle">Contact me</h1>
+			<h2>Philadelphia, PA</h2>
+			<h2>(267) 362-9708</h2>
+			<h2>mfcbone@gmail.com</h2>
+		</div>
+	</section>
+
+	<section id="projects">
+		<div id="projectsBar"><h1 class="sectionTitle">projects</h1></div>
+		<div class="row">
+			<div class="tri" id="imdb" onclick="projectView(this.getAttribute('id'));">
+					<h1 class="title">IMDb UI Redesign</h1>
+					<div class="projectShade"></div>
+					<img alt="Logo for imdb" src="/static/images/imdb.png">
+			</div>
+			<div class="tri" id="gobibit" onclick="projectView(this.getAttribute('id'));">
+					<h1 class="title">goBibit</h1>
+					<div class="projectShade"></div>
+					<img alt="GoBibit icon" src="/static/images/goBibitIcon.png">
+			</div>
+			<div class="tri" id="ed" onclick="projectView(this.getAttribute('id'));">
+					<h1 class="title">TickleEdSheeran</h1>
+					<div class="projectShade"></div>
+					<img alt="A picture of Ed Sheeran" src="/static/images/edIcon.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="tri" id="tetrad" onclick="projectView(this.getAttribute('id'));">
+					<h1 class="title">WebVR Color</h1>
+					<div class="projectShade"></div>
+					<img alt="Logo for A-Frame" src="/static/images/aFrame.png">
+			</div>
+			<div class="tri" id="zodiac" onclick="projectView(this.getAttribute('id'));">
+					<h1 class="title">Zodiac Project</h1>
+					<div class="projectShade"></div>
+					<img src="/static/images/map.png" alt="Picture of an old map">
+			</div>
+			<div class="tri" id="presentation" onclick="projectView(this.getAttribute('id'));">
+					<h1 class="title">WebVR Presentation</h1>
+					<div class="projectShade"></div>
+					<img alt="Logo for A-Frame" src="/static/images/aFrame.png">
+			</div>
+		</div>
+		<div id="projectCards">
+			<div class="projectCard" id="imdbCard">
+						<a href="https://invis.io/A4EW6IK5P#/268049161_Home2-27"><img alt="Picture of the IMDb redesign" src="/static/images/imdbView.png"></a>
+						<h1>IMDb UI/UX Redesign</h1>
+						<p>Redesigned the user interface for IMDb using Invision. The goal was to make the user experience overall more theatrical and engaging.</p>
+						<ul>
+							<li>Adobe Photoshop</li>
+							<li>Adobe Illustrator</li>
+						</ul>
+						<a class="button" href="https://invis.io/A4EW6IK5P#/268049161_Home2-27" target="_blank">see project</a>
+				</div>
+				<div class="projectCard" id="gobibitCard">
+						<a href="http://gobibit.com"><img alt="Screenshot from goBibit.com" src="/static/images/gobibit.png"></a>
+						<h1>goBibit Citation Service</h1>
+						<p>Fully developed from scratch, goBibit is a responsive website that was designed to be quick and easy to use. It was made with a Python backend with features like auto-citing news websites, book searches, and support for MLA, APA, and Chicago formats. This was my first website.</p>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>							
+							<li>Python</li>
+						</ul>
+						<a class="button" href="http://goBibit.com" target="_blank">see project</a>
+				</div>
+				<div class="projectCard" id="edCard">
+						<a href="http://TickleEdSheeran.com"><img alt="Picture of TickleEdSheeran.com" src="/static/images/edView.png"></a>
+						<h1>Tickle Ed Sheeran</h1>
+						<p>My buddy walked in one night and said "Yo Mike, let's make something." 3 hours later, this beautiful little project was brought into the world. Enjoy.</p>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+						</ul>
+						<a class="button" href="http://TickleEdSheeran.com" target="_blank">see project</a>
+				</div>
+				<div class="projectCard" id="tetradCard">
+						<a href="/tetrad"><img alt="Picture of tetrad project" src="/static/images/tetradView.png"></a>
+						<h1>WebVR Tetrad Color Demonstration</h1>
+						<p>This was made for one of my design classes using the A-Frame web framework to demonstrate the use of a tetrad color scheme in VR.</p>
+						<ul>
+							<li>HTML</li>
+							<li>A-Frame</li>
+						</ul>
+						<a class="button" href="/tetrad" target="_blank">see project</a>
+				</div>
+				<div class="projectCard" id="zodiacCard">
+						<a href="https://www.zodiacleaders.com"><img alt="Image of an old map" src="/static/images/map.png"></a>
+						<h1>Zodiac Leaders Project</h1>
+						<p>Made for my Javascript I class, this is a fully responsive website that tells you what leader from history you share a zodiac sign with.</p>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+						</ul>
+						<a class="button" href="https://www.zodiacleaders.com" target="_blank">see project</a>
+				</div>
+				<div class="projectCard" id="presentationCard">
+						<a href="/presentation"><img alt="Screenshot of the presentation project" src="/static/images/presentationView.png"></a>
+						<h1>WebVR Presentation</h1>
+						<p>Using the A-Frame web framework, I built this presentation to demonstrate what exactly A-Frame is and what it can do. The audience was directed to this VR presentation to follow along with our real world presentation.</p>
+						<ul>
+							<li>HTML</li>
+							<li>A-Frame</li>
+						</ul>
+						<a class="button" href="/presentation" target="_blank">see project</a>
+				</div>
+		</div>
+		<div id="shade" onclick="hideProject()"></div>
+	</section>
+	<section id="skills">
+			<h1 class="sectionTitle">skills</h1>
+			<div id="skillsContainer">
+					
+					<div class="skillBox"><div class="skillFill" id="css"><h2 class="skillName">CSS</h2></div></div>
+					<div class="skillBox"><div class="skillFill" id="javascript"><h2 class="skillName">JavaScript</h2></div></div>
+					<div class="skillBox"><div class="skillFill" id="python"><h2 class="skillName">Python</h2></div></div>
+			</div>
+	</section>
+	<section id="contact">
+		<h1 class="sectionTitle">let's get to work</h1>
+		<div id="contactContainer">
+			<h2>Philadelphia, PA</h2>
+			<h2>(267) 362-9708</h2>
+			<h2><a href="mailto:mfcbone@gmail.com">mfcbone@gmail.com</a></h2>
+		</div>
+		<div id="linksContainer">
+			<div id="links">
+				<a href="https://github.com/carbonology" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/themcarbone" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+				<a href="mailto:mfcbone@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/mike-carbone-98a950129/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		
+			<h5 id="copy">&copy; Mike Carbone 2018. All rights reserved.</h5>
+	</section>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/fancy.js"></script>
+</body>
+</html>
