@@ -463,4 +463,19 @@ path:hover{
 		align-items: initial;
 		flex-direction: column;
 	}
+
+	.welcome__content{
+		width: 100%;
+	}
+
+	#welcome ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+
+	#welcome li{
+		margin: 0;
+	}
 }
