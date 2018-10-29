@@ -261,7 +261,7 @@ header *{
 .project a{
 	color: var(--theme-accent);
 	padding: 10px;
-	margin: 0 15px 0 -15px;
+	margin: 0 15px 0 -10px;
 	transition: all .25s ease-in-out;
 }
 
@@ -452,6 +452,11 @@ path:hover{
 
 	.welcome__pic{
 		display: none;
+	}
+
+	.welcome__content li{
+		margin: 20px 10px 20px 8px;
+		padding: 17px 0;
 	}
 
 	.project__row{

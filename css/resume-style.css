@@ -83,6 +83,33 @@ main{
 	max-width: 1000px;
 }
 
+.quick-nav{
+	padding: 10px 0;
+}
+
+.quick-nav ul{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.quick-nav li{
+	display: inline-block;
+	text-align: center;
+}
+
+.quick-nav a{
+	color: var(--theme-accent);
+	font-size: 1.5rem;
+	padding: 10px 15px;
+	transition: .25s all ease-in-out;
+}
+
+.quick-nav a:hover{
+	background-color: yellow;
+	transition: .25s all ease-in-out;
+}
+
 .top{
 	background-color: var(--theme-accent);
 	color: var(--theme-white);
