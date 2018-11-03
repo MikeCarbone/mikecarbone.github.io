@@ -364,7 +364,7 @@ header *{
 
 .work ul{
 	display: initial;
-	margin: 10px 30px;
+	margin: 10px 0px 10px 30px;
 }
 
 .work li{
