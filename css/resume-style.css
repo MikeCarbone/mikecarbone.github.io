@@ -99,8 +99,10 @@ main{
 }
 
 .quick-nav a{
+	border: 1px solid var(--theme-accent);
 	color: var(--theme-accent);
 	font-size: 1.5rem;
+	margin: 0 10px;
 	padding: 10px 15px;
 	transition: .25s all ease-in-out;
 }
