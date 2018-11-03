@@ -472,6 +472,10 @@ path:hover{
 		width: 100%;
 	}
 
+	.work{
+		padding-right: 0px;
+	}
+
 	#welcome li{
 		margin: 0;
 	}
