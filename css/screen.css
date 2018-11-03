@@ -442,6 +442,7 @@ path:hover{
 
 @media screen and (max-width: 800px){
 	.project{
+		padding-right: 0;
 		max-width: initial;
 		width: 100%;
 	}
