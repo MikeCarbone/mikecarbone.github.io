@@ -226,11 +226,6 @@ header *{
 	width: 50%;
 }
 
-/*.project:hover{
-	box-shadow: 0px 2px 9px -3px black;
-	transition: all .25s ease-in-out;
-}*/
-
 .blocks-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -259,9 +254,10 @@ header *{
 }
 
 .project a{
+	border: 1px solid var(--theme-accent);
 	color: var(--theme-accent);
 	padding: 10px;
-	margin: 0 15px 0 -10px;
+	margin: 10px 15px 10px 0;
 	transition: all .25s ease-in-out;
 }
 

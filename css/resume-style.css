@@ -266,6 +266,10 @@ main{
 		padding: 0;
 	}
 
+	.project{
+		padding-right: 0;
+	}
+
 	.top__info{
 		flex-direction: column;
 	}
