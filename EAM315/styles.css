@@ -1,0 +1,190 @@
+*{
+	border: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+nav h1{
+	display: inline-block;
+	font-size: 3rem;
+	text-align: left;
+}
+
+nav img{
+	width: 40px;
+}
+
+nav div{
+	display: flex;
+	align-items: center;
+}
+
+nav li{
+	list-style-type: none;
+	transition: .2s all ease-in;
+}
+
+nav a{
+	color: black;
+	font-size: 1.25rem;
+	padding: 10px;
+	text-decoration: none;
+}
+
+nav li:hover{
+	background-color: yellow;
+	border-radius: 10px;
+	transition: .2s all ease-in;
+}
+
+#arrow{
+	transform: rotate(180deg);
+}
+
+.top{
+	color: var(--hot-tub-white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+}
+
+h1{
+	font-family: Oswald, sans-serif;
+	font-size: 5rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+h2{
+	font-family: Oswald, sans-serif;
+	font-size: 3rem;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.titleHr{
+	background-color: yellow;
+	border-radius: 10px;
+	height: 10px;
+	margin: 30px auto;
+	width: 200px;
+}
+
+.top h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200 !important;
+	margin: 0 0 60px 0 !important;
+}
+
+.mainImg{
+	margin: 0 auto;
+	/*max-height: 600px;
+	max-width: 700px;
+	object-fit: cover;
+	object-position: center;*/
+	width: 100%;
+}
+
+.byline{
+	display: flex;
+	justify-content: center;
+	margin: 0px 0 0 0;
+}
+
+.byline h4{
+	font-size: .85rem;
+	font-weight: lighter;
+}
+
+.content{
+	/*background-color: var(--hot-tub-white);*/
+	border-radius: 10px;
+	color: var(--hot-tub-black);
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 50px;
+}
+
+.content h2{
+	font-size: 1.95rem;
+	font-weight: bolder;
+}
+
+.content h2:not(:first-child) {
+	margin: 55px 0 0 0;
+}
+
+.content p{
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	margin: 10px 0;
+	padding: 5px;
+}
+
+.content li{
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.1rem;
+	line-height: 1.4;
+	margin: 5px 0;
+	padding: 5px 5px 5px 15px;
+}
+
+.content h3{
+	font-family: "Oswald", sans-serif;
+	font-size: 2rem;
+	margin: 30px 0 0 4px;
+	border-bottom: 2px solid yellow; 
+	padding: 0 0 5px 0;
+	width: 75%;
+}
+
+
+.backArrow{
+	height: 50px;
+	margin: -40px 0 40px 0;
+	transform: rotate(180deg);
+	transition: .2s all ease-in;
+	width: 50px;
+}
+
+.backArrow:hover path{
+	fill: var(--hot-tub-blue);
+	transition: .2s all ease-in;
+}
+
+.backArrow path{
+	fill: var(--hot-tub-white);
+}
+
+@media screen and (max-width: 900px) {
+
+	.top{
+		padding: 50px 10px;
+	}
+
+	.top h1{
+		font-size: 3rem;
+	}
+
+	.content{
+		padding: 50px 10px;
+	}
+
+	.backArrow{
+		height: 25px;
+		margin: -50px auto 0 auto;
+		text-align: center;
+		width: 25px;
+	}
+
+	
+}
