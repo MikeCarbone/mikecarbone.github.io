@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | DRIP</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500|Oswald:100,200,300,400" rel="stylesheet">
+
+	<style type="text/css">
+		.articles{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.article{
+			color: black;
+			box-shadow: 0px 0px 22px -10px black;
+			border-radius: 8px;
+			max-width: 500px;
+			text-decoration: none;	
+			transition: .2s all ease-in;
+			padding: 10px;
+		}
+
+		.article:hover{
+			box-shadow: 0px 0px 22px -5px black;
+			transition: .2s all ease-in;
+		}
+
+		.article h1{
+			font-size: 3rem;
+		}
+
+		.article h2{
+			font-size: 1.5rem;
+			font-weight: 300;
+			margin: 0 0 30px 0;
+		}
+
+		.container{
+			display: flex;
+			max-width: 1300px;
+			margin: 0px auto 50px auto;
+			justify-content: space-evenly;
+			padding: 50px;
+		}
+
+		.aboutP{
+			color: white;
+			font-family: "Open Sans", sans-serif;
+			font-size: 2rem;
+			font-weight: lighter;
+			line-height: 1.8;
+			margin: 10px 0;
+			max-width: 500px;
+			text-align: center;
+			padding: 5px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="listing.html">
+			<h1>DRIP</h1>
+			<img src="drip.svg">
+		</a>
+	</nav>
+	<div class="container">
+		<section>
+			<h1>Most Recent</h1>
+			<div class="titleHr"></div>
+		</section>
+		<section class="articles">
+			<a href="index.html" class="article">
+				<h1>The Fall of A Giant<h1>
+					<div class="titleHr"></div>
+				<h2>How a $350 million valuation turned into nothing</h2>
+				<img class="mainImg" src="yak.png" alt="">
+			</a>
+		</section>
+	</div>
+	<div style="background-color: #3b3b3b">
+		<div class="container" >
+		<section class="articles">
+			<p class="aboutP">Here at DRIP we focus on telling stories. Not only those featuring success, but also failures. Hopefully we can all learn a few things here.</p>
+		</section>
+		<section>
+			<h1 style="color: white">About</h1>
+			<div class="titleHr"></div>
+		</section>
+	</div>
+	</div>
+	<div class="container">
+		<section>
+			<h1>Featured</h1>
+			<div class="titleHr"></div>
+		</section>
+		<section class="articles">
+			<a href="pivotGod.html" class="article">
+				<h1>The Pivot King<h1>
+					<div class="titleHr"></div>
+				<h2>Remember A-Rod? You might want to rethink what you know</h2>
+				<img class="mainImg" src="arod.png" alt="">
+			</a>
+		</section>
+	</div>
+	<div style="background-color: #3b3b3b">
+		<div class="container" >
+		<section class="articles" style="flex-direction: column; justify-content: center;">
+			<img style="margin: 0 auto; width: 100px; height: 100px" src="twitter.png">
+			<p class="aboutP"><a style="color: white;" href="http://twitter.com/carbonology_">Follow us @carbonology_</a></p>
+		</section>
+		<section>
+			<h1 style="color: white">Follow Us</h1>
+			<div class="titleHr"></div>
+		</section>
+	</div>
+	
+	
+</body>
+</html>
+
+
